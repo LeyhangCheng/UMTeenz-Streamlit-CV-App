@@ -37,10 +37,10 @@ img_trump = Image.open("images/trump2.jpeg")
 if menu_bar_selected == "Home":
     with st.container():
         st.write("---")
-        st.subheader("Hi, I am Leyhang :wave:")
-        st.title("A Software Developer From Kuala Lumpur")
+        st.title("Hi, I am Leyhang :wave:")
+        st.subheader("A Software Developer From Kuala Lumpur")
         st.write(
-            "This is my first python app website"
+            "This is my first python app website, hence feel free to navigate to other pages to know more about me!"
         )
 
 # ---- WHAT I STUDIED ----
@@ -49,18 +49,16 @@ if menu_bar_selected == "Education Background":
         st.write("---")
         left_column, right_column = st.columns(2)
         with left_column:
-            st.header("What did I study?")
-            st.write("##")
+            st.subheader("Education Summary")
+            st.write("\n")
             st.write(
                 """
                 I'm a graduate from Universiti Malaya with the following credentials:
-                - Bachelor of Artificial Intelligence
-                - Master of Data Science
-
-                If this sounds interesting to you, consider joining Universiti Malaya too
+                - ✔️ Bachelor of Artificial Intelligence
                 """
             )
-            st.write("[UM Portal >](https://portal.um.edu.my)")
+            st.write("\n")
+            st.write("[Link to UM Faculty of Computer Science >](https://portal.um.edu.my)")
         
         # Insert animation, can be obtained from https://lottiefiles.com
         with right_column:
@@ -76,11 +74,35 @@ if menu_bar_selected == "Curriculum Vitae":
         with image_column:
             st.image(img_trump)
         with text_column:
-            st.subheader("Name: Cheng Ley Hang")
+            st.subheader("Cheng Ley Hang")
             st.write(
                 """
-                I've just learned how to use Lottie Files in Streamlit!
-                This is my latest picture!
+                I've Strong interest in leveraging technology as a tool to assist entities in enabling digital transformation
                 """
             )
+
+            st.write('\n')
+            st.subheader("Qulifications")
+            st.write('\n')
+            st.write(
+                """
+                - ✔️ 1 year in Ernst & Young as Project Management Trainee
+                - ✔️ Strong hands on experience and knowledge in Azure technology
+                - ✔️ 3 years in ExxonMobil as Tech Lead & Scrum Master
+                - ✔️ Good understanding of statistical analytics in Oil & Gas manufacturing application
+                - ✔️ Certified SAFe® 5 Advanced Scrum Master
+                - ✔️ Professional Scrum Master I from Scrum Organisation
+                """
+                )
+            st.write('\n')
+            st.subheader("Hard Skills")
+            st.write(
+                """
+            - 👩‍💻 Programming: Python, SQL, .NET, JS
+            - 📊 Data Visulization: PowerBi, Tableau, Plotly
+            - 📚 Cloud: Terraform Enterprise, Azure (RG, Blob, Function App, Service Bus), Openshift
+            - 🗄️ Databases: MS SQL, Snowflake, HDFS
+            """
+            )
+            st.write('\n')
             st.markdown("[Get my CV here in pdf format](https://www.canva.com/resumes/templates/)")
