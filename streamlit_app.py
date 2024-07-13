@@ -18,7 +18,7 @@ menu_bar_selected = option_menu(
         styles={
         "container": {"padding": "0!important", "background-color": "#1b1f1b"}, # HEX code
         "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "center", "margin":"0px", "--hover-color": "#406340"},
+        "nav-link": {"font-size": "25px", "text-align": "center", "margin":"0px", "--hover-color": "#406340", "color": "white"},
         "nav-link-selected": {"background-color": "green"},
     },
 )
